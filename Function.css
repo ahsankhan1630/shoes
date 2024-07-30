@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: cornsilk;
+    font-family: Arial, sans-serif;
+}
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('closeup-of-young-woman-runner-tying-her-shoelaces-healthy-and-fitness-concept-free-photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: #ffffff;
+}
+header h1 span{
+    color: #ff0000;
+}
+.shoes-content{
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+header h1{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header p{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.search-form {
+    display: flex;
+}
+
+input[type="search"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="search"]::placeholder {
+    color: #888;
+}
+
+button {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 0 4px 4px 0;
+    background-color: #ff0000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    background-color: #920202;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    height: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    display: flex;
+    margin: 0 10px;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+.logo h1{
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.logo img{
+    margin-left: 40px;
+    height: 50px;
+    width: 90px;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 10px;
+}
+
+.navbar-menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 20px;
+}
+
+.navbar-menu a:hover {
+    background-color: #ffffff;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+        background-color: #000000;
+        margin-left:20px;
+        margin-right: 60px;
+        margin-top: 10px;
+    }
+
+    .navbar-menu li {
+        margin: 0;
+    }
+
+    .navbar-menu a {
+        padding: 10px;
+        display: block;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+.product-gallery {
+    text-align: center;
+}
+
+.product-gallery h1 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin: 10px 30px;
+}
+
+.product-card {
+    background-color: #c9c9c9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+}
+
+.product-card h2 {
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+.product-card p {
+    margin: 0 10px 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
